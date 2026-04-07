@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio en Mantenimiento | Volvemos pronto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen p-6">
+
+    <div class="max-w-md w-full text-center">
+        <!-- Ilustración SVG -->
+        <div class="mb-10 animate-float flex justify-center">
+            <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="90" fill="#E2E8F0" />
+                <rect x="60" y="70" width="80" height="60" rx="8" fill="#475569" />
+                <path d="M75 100H125" stroke="white" stroke-width="4" stroke-linecap="round" />
+                <path d="M75 115H105" stroke="white" stroke-width="4" stroke-linecap="round" />
+                <circle cx="140" cy="60" r="25" fill="#3B82F6" />
+                <path d="M135 55L145 65M145 55L135 65" stroke="white" stroke-width="3" stroke-linecap="round" />
+                <path d="M40 140L60 160M160 140L140 160" stroke="#94A3B8" stroke-width="6" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <h1 class="text-3xl font-bold text-slate-900 mb-4">
+            Sitio fuera de servicio
+        </h1>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100">
+            <p class="text-lg text-slate-600 mb-6">
+                Estamos realizando ajustes técnicos por <span class="font-semibold text-blue-600">uso de hosting</span> para mejorar tu experiencia.
+            </p>
+            
+            <div class="space-y-4">
+                <p class="text-slate-800 font-medium">
+                    ¡Vuelve pronto! Lo estamos solucionando.
+                </p>
+                
+                <div class="flex items-center justify-center gap-2">
+                    <span class="flex h-3 w-3 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                    </span>
+                    <span class="text-sm text-slate-500 uppercase tracking-widest font-semibold">Trabajando en ello</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-slate-400 text-sm">
+            &copy; 2026 sitio-STYN. Todos los derechos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
